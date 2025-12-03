@@ -184,7 +184,7 @@ with tabs[1]:
         fig = go.Figure()
         
         # We draw the price line
-        fig.add_trace(go.Scatter(x=view_price.index, y=view_price, mode='lines', line=dict(color='white', width=1.5), name='Price'))
+        fig.add_trace(go.Scatter(x=view_price.index, y=view_price, mode='lines', line=dict(color='yellow', width=1.5), name='Price'))
         
         # Add colored shapes for regimes
         # This is computationally intensive for many points, so we optimize by grouping
