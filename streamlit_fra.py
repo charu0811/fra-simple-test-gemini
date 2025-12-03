@@ -235,7 +235,7 @@ with tabs[2]:
     fig_main = make_subplots(rows=2 if show_dd else 1, cols=1, shared_xaxes=True, row_heights=[0.7, 0.3] if show_dd else [1])
     
     # Price
-    fig_main.add_trace(go.Scatter(x=df_filt.index, y=df_filt[pa_asset], name='Price', line=dict(color='black')), row=1, col=1)
+    fig_main.add_trace(go.Scatter(x=df_filt.index, y=df_filt[pa_asset], name='Price', line=dict(color='grey')), row=1, col=1)
     
     if show_sma:
         sma = df_filt[pa_asset].rolling(50).mean()
