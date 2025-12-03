@@ -5,3 +5,4 @@ seaborn
 openpyxl
 numpy
 plotly 
+scipy 
